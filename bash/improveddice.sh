@@ -27,4 +27,5 @@ die2=$(( RANDOM % sides + bias ))
 echo "Rolled $die1, $die2"
 #task2 solution
 echo "Sum of Dice : $(($die1+$die2))"
-echo "Average of the Dice :  $(( ($die1+$die2) /2 ))"
+echo $(awk "BEGIN{printf \"Average of the Dice : %.2f\", ($die1+$die2) /2}")
+
